@@ -8,13 +8,19 @@ import "./tooltip.css";
 export function TooltipContent({ children }: PropsWithChildren) {
   const { tooltipRef, finalCoords, isOpen, maxWidth, bgColor, textColor, id } =
     useTooltip();
-  if (!isOpen || !finalCoords) return null;
+  if (!isOpen) return null;
   return createPortal(
     <div
       ref={tooltipRef}
       role="tooltip"
       id={id}
-      style={{ ...finalCoords.coords }}
+      style={
+        finalCoords
+          ? {
+              ...finalCoords.coords,
+            }
+          : {}
+      }
       className="yana-ui-tooltip"
     >
       <div
