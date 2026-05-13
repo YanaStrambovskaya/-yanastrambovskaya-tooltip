@@ -1,0 +1,37 @@
+{
+  "name": "@yanastrambovskaya/tooltip",
+  "version": "0.0.4",
+  "description": "Accessible React tooltip component",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "^10.3.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "storybook": "^10.3.6",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "react",
+    "tooltip",
+    "ui",
+    "component"
+  ],
+  "license": "MIT"
+}

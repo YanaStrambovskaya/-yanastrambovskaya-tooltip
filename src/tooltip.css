@@ -1,0 +1,48 @@
+/* Tooltip.module.css */
+
+.yana-ui-tooltip {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.yana-ui-tooltip-inner {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 15px;
+  border-radius: 0.375rem;
+}
+
+.yana-ui-caret {
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* TOP */
+
+.yana-ui-caretTop {
+  top: 100%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+/* BOTTOM */
+
+.yana-ui-caretBottom {
+  bottom: 100%;
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+
+/* LEFT */
+
+.yana-ui-caretLeft {
+  left: 100%;
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+/* RIGHT */
+
+.yana-ui-caretRight {
+  right: 100%;
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}
